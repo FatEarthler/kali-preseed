@@ -1,0 +1,8 @@
+At the Kali boot menu, press <tab>.
+Edit the command line and replace the below
+
+	preseed/url=/cdrom/simple-cdd/default.preseed simple-cdd/profiles=kali,offline desktop=xfce
+	
+with
+
+	auto=true url={actual url} priority=critical
