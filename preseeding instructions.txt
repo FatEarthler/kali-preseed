@@ -6,3 +6,7 @@ Edit the command line and replace the below
 with
 
 	auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/default-crypted-de_CH-preseed.cfg priority=critical
+
+
+Resources:
+https://www.linuxjournal.com/content/preseeding-full-disk-encryption
