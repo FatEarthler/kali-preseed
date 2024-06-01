@@ -1,4 +1,5 @@
 TODOS:
+- automated GRUB installation (still needed to select a device to install GRUB to)
 - add nuke password
 - create proper user and hash the passwords
 - hash the disk encryption password
