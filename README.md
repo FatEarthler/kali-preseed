@@ -5,3 +5,4 @@ TODOS:
 - hash the disk encryption password
 - rename files for easier boot-parameter modification
 - crate a minimal installation preseed file (only minimal packages installed). this should be used for testing purposes, when you want to minimize installation duration
+- - t
