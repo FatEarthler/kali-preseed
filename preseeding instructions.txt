@@ -10,3 +10,5 @@ with
 
 Resources:
 https://www.linuxjournal.com/content/preseeding-full-disk-encryption
+https://superuser.com/questions/1730951/debian-11-preseed-with-luks-and-lvm
+https://wikitech.wikimedia.org/wiki/PartMan
