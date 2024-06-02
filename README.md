@@ -22,8 +22,7 @@ TODOS:
  
 DONE, testing required
 - automated GRUB installation
-- create a minimal installation preseed file (only minimal packages installed). this should be used for testing purposes, when you want to minimize installation duration
-  - this one should not eject boot media (e.g. iso file) after install
 
 DONE
 - rename files for easier boot-parameter modification
+- create a minimal installation preseed file (only minimal packages installed). this should be used for testing purposes, when you want to minimize installation duration
