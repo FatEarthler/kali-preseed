@@ -1,3 +1,5 @@
+preseedmini.cfg does the exact same thing as preseed.cfg, except that it does not install any packages at all, not even a desktop environment. This is mainly used for testing the installation process iteself.
+
 At the Kali boot menu, press <tab>.
 Edit the command line and replace the below
 
