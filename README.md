@@ -20,8 +20,10 @@ https://unix.stackexchange.com/questions/556413/how-do-i-set-mirrors-in-etc-apt-
 
 TODOS:
 - add nuke password
-- create proper user and hash the passwords
-- hash the disk encryption password
+- create proper user, and hash the passwords
+- user proper disk enryption password and hash it
+- alias uuaa='sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean', possibly with providing default answers to user prompts
+- zsh as default shell for users
 
 
 DONE, testing required
@@ -30,7 +32,7 @@ DONE, testing required
 
 DONE
 - rename files for easier boot-parameter modification
-- create a minimal installation preseed file (only minimal packages installed). this should be used for testing purposes, when you want to minimize installation duration
+- create a minimal installation preseed file (don't install any packages). this should be used for testing purposes, when you want to minimize installation duration
 - automated, forced GRUB installation
 - ensure that /etc/apt/sources.list contains the following content:
 	```
