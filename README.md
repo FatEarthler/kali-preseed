@@ -24,6 +24,7 @@ TODOS:
 - user proper disk enryption password and hash it
 - alias uuaa='sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean', possibly with providing default answers to user prompts
 - zsh as default shell for users
+- for VM installations, ensure virtualbox guest additions and utils are installed
 
 
 DONE, testing required
