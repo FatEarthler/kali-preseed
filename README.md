@@ -50,7 +50,8 @@ TODOS:
 - hybrid: live & install
 - VirtualBox Guest additions
 - uuaa alias
-- live mode with persistence
-- include aboves preseed
+- live mode with encrypted persistence
+- installation disk encryption
+- include aboves preseed (check for conflicts!)
 - zsh as default bash
 - disable NetworkManager and setup ifupdown
