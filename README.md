@@ -4,15 +4,15 @@
 preseed.cfg and preseedmini.cfg do the exact same things, with one big exception:the latter does not install any packages at all, not even a desktop environment. This is mainly used for testing the installation process iteself, as it is much speedier than installing a lot of packages.
 
 ## Usage
-At the Kali boot menu, press <tab>.
-Edit the command line and replace the below
-
-	preseed/url=/cdrom/simple-cdd/default.preseed simple-cdd/profiles=kali,offline desktop=xfce
-	
+1. At the Kali boot menu, press the 'tab' key.
+2. Edit the command line and replace these boot parameters
+```
+preseed/url=/cdrom/simple-cdd/default.preseed simple-cdd/profiles=kali,offline desktop=xfce
+```
 with
-
-	auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/preseed.cfg priority=critical
-
+```
+auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/preseed.cfg priority=critical
+```
 
 ## Resources:
 https://www.linuxjournal.com/content/preseeding-full-disk-encryption
