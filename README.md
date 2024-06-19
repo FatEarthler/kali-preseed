@@ -15,10 +15,10 @@ auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/pr
 ```
 
 ## Resources:
-https://www.linuxjournal.com/content/preseeding-full-disk-encryption
-https://superuser.com/questions/1730951/debian-11-preseed-with-luks-and-lvm
-https://wikitech.wikimedia.org/wiki/PartMan
-https://unix.stackexchange.com/questions/556413/how-do-i-set-mirrors-in-etc-apt-sources-list-with-a-debian-preseed-file
+- <https://www.linuxjournal.com/content/preseeding-full-disk-encryption>
+- <https://superuser.com/questions/1730951/debian-11-preseed-with-luks-and-lvm>
+- <https://wikitech.wikimedia.org/wiki/PartMan>
+- <https://unix.stackexchange.com/questions/556413/how-do-i-set-mirrors-in-etc-apt-sources-list-with-a-debian-preseed-file>
 
 
 ## TODOS:
