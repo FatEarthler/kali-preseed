@@ -17,7 +17,7 @@ https://wikitech.wikimedia.org/wiki/PartMan
 https://unix.stackexchange.com/questions/556413/how-do-i-set-mirrors-in-etc-apt-sources-list-with-a-debian-preseed-file
 
 
-
+#Preseed#
 TODOS:
 - add nuke password
 - create proper user, and hash the passwords
@@ -26,10 +26,8 @@ TODOS:
 - zsh as default shell for users
 - for VM installations, ensure virtualbox guest additions and utils are installed
 
-
 DONE, testing required
 - ...
-
 
 DONE
 - rename files for easier boot-parameter modification
@@ -43,3 +41,13 @@ DONE
 	# Additional line for source packages
 	# deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
 	```
+
+#Custom ISO#
+TODOS:
+- hybrid: live & install
+- VirtualBox Guest additions
+- uuaa alias
+- live mode with persistence
+- include aboves preseed
+- zsh as default bash
+- disable NetworkManager and setup ifupdown
