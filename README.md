@@ -50,6 +50,7 @@ TODOS:
 - hybrid: live & install
    * might be achievable using both the --live and --installer flags ``` ./build.sh --verbose --live --installer ```
    * might be that with the --live build, you can still install a default kali and just use preseeding for configuration
+- maybe use 'netinstaller' installer version, so you always get the latest packages from kali-rolling
 - VirtualBox Guest additions
   ```
   virtualbox-guest-utils/kali-rolling
