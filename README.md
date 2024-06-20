@@ -48,8 +48,21 @@ auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/pr
 # Custom ISO
 TODOS:
 - hybrid: live & install
+   * might be achievable using both the --live and --installer flags ``` ./build.sh --verbose --live --installer ```
+   * might be that with the --live build, you can still install a default kali and just use preseeding for configuration
 - VirtualBox Guest additions
+  ```
+  virtualbox-guest-utils/kali-rolling
+  virtualbox-guest-x11/kali-rolling
+  ```
 - uuaa alias
+  ```bash
+  alias uuaa='echo "sudo apt update" && sudo apt update && \
+    		echo "sudo apt full-upgrade -y" && sudo apt full-upgrade -y && \
+  		echo "sudo apt autoremove -y" && sudo apt autoremove -y && \
+  		echo "sudo apt autoclean" sudo apt autoclean
+  
+  ```
 - live mode with encrypted persistence
 - installation disk encryption
 - include aboves preseed (check for conflicts!)
