@@ -55,6 +55,7 @@ TODOS:
   ```
   virtualbox-guest-utils/kali-rolling
   virtualbox-guest-x11/kali-rolling
+  virtualbox-guest-dkms (really? at least under Windows, the two above seem to suffice for VirtualBox under Windows. Source: https://live-team.pages.debian.net/live-manual/html/live-manual/the-basics.en.html#testing-iso-with-virtualbox)
   ```
 - uuaa alias
   ```bash
