@@ -25,7 +25,14 @@ auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/pr
 - add nuke password
 - create proper user, and hash the passwords
 - user proper disk enryption password and hash it
-- alias uuaa='sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean', possibly with providing default answers to user prompts
+- uuaa alias
+  ```bash
+  alias uuaa='echo -e "\e[32msudo apt update\e[0m" && sudo apt update && \
+    		echo -e "\e[32msudo apt full-upgrade -y\e[0" && sudo apt full-upgrade -y && \
+  		echo -e "\e[32msudo apt autoremove -y\e[0" && sudo apt autoremove -y && \
+  		echo -e "\e[32msudo apt autoclean\e[0" sudo apt autoclean
+  
+  ``` 
 - zsh as default shell for users
 - for VM installations, ensure virtualbox guest additions and utils are installed
 
@@ -59,12 +66,12 @@ TODOS:
   ```
 - uuaa alias
   ```bash
-  alias uuaa='echo "sudo apt update" && sudo apt update && \
-    		echo "sudo apt full-upgrade -y" && sudo apt full-upgrade -y && \
-  		echo "sudo apt autoremove -y" && sudo apt autoremove -y && \
-  		echo "sudo apt autoclean" sudo apt autoclean
+  alias uuaa='echo -e "\e[32msudo apt update\e[0m" && sudo apt update && \
+    		echo -e "\e[32msudo apt full-upgrade -y\e[0" && sudo apt full-upgrade -y && \
+  		echo -e "\e[32msudo apt autoremove -y\e[0" && sudo apt autoremove -y && \
+  		echo -e "\e[32msudo apt autoclean\e[0" sudo apt autoclean
   
-  ```
+  ```  
 - live mode with encrypted persistence
 - installation disk encryption
 - include aboves preseed (check for conflicts!)
