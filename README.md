@@ -27,10 +27,10 @@ auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/pr
 - user proper disk enryption password and hash it
 - uuaa alias
   ```bash
-  alias uuaa='echo -e "\e[32msudo apt update\e[0m" && sudo apt update && \
-    		echo -e "\e[32msudo apt full-upgrade -y\e[0" && sudo apt full-upgrade -y && \
-  		echo -e "\e[32msudo apt autoremove -y\e[0" && sudo apt autoremove -y && \
-  		echo -e "\e[32msudo apt autoclean\e[0" sudo apt autoclean
+  alias uuaa='echo -e "\e[1;31;40msudo apt update\e[0m" && sudo apt update && \
+    		echo -e "\e[1;31;40msudo apt full-upgrade -y\e[0" && sudo apt full-upgrade -y && \
+  		echo -e "\e[1;31;40msudo apt autoremove -y\e[0" && sudo apt autoremove -y && \
+  		echo -e "\e[1;31;40msudo apt autoclean\e[0" sudo apt autoclean
   
   ``` 
 - zsh as default shell for users
@@ -66,10 +66,10 @@ TODOS:
   ```
 - uuaa alias
   ```bash
-  alias uuaa='echo -e "\e[32msudo apt update\e[0m" && sudo apt update && \
-    		echo -e "\e[32msudo apt full-upgrade -y\e[0" && sudo apt full-upgrade -y && \
-  		echo -e "\e[32msudo apt autoremove -y\e[0" && sudo apt autoremove -y && \
-  		echo -e "\e[32msudo apt autoclean\e[0" sudo apt autoclean
+  alias uuaa='echo -e "\e[1;31;40msudo apt update\e[0m" && sudo apt update && \
+    		echo -e "\e[1;31;40msudo apt full-upgrade -y\e[0" && sudo apt full-upgrade -y && \
+  		echo -e "\e[1;31;40msudo apt autoremove -y\e[0" && sudo apt autoremove -y && \
+  		echo -e "\e[1;31;40msudo apt autoclean\e[0" sudo apt autoclean
   
   ```  
 - live mode with encrypted persistence
@@ -77,3 +77,5 @@ TODOS:
 - include aboves preseed (check for conflicts!)
 - zsh as default bash
 - disable NetworkManager and setup ifupdown
+- auto Tor over VPN
+- firewall setup to block outgoing traffic to tracker and add sites (do some research first how to properly block ads and trackers using netfilter)
