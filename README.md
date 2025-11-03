@@ -34,7 +34,6 @@ auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/pr
   
   ``` 
 - zsh as default shell for users
-- for VM installations, ensure virtualbox guest additions and utils are installed
 - configure github ssh login
 - install nordvpn and configure static vpn connection script
 - install nordpass
@@ -80,7 +79,7 @@ TODOS:
 - include aboves preseed (check for conflicts!)
 - zsh as default bash
 - disable NetworkManager and setup ifupdown
-- auto Tor over VPN
+- TOR Browser and service
 - firewall setup to block outgoing traffic to tracker and add sites (do some research first how to properly block ads and trackers using netfilter)
 - configure github ssh login
 - install nordvpn and configure static vpn connection script
