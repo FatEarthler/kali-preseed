@@ -37,6 +37,7 @@ auto=true url=https://raw.githubusercontent.com/FatEarthler/kali-preseed/main/pr
 - configure github ssh login
 - install nordvpn and configure static vpn connection script
 - install nordpass
+- add lamphost ssh config and private key
 
 ### DONE, testing required
 - ...
@@ -84,3 +85,4 @@ TODOS:
 - configure github ssh login
 - install nordvpn and configure static vpn connection script
 - install nordpass
+- add lamphost ssh config and private key
