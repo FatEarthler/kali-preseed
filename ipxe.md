@@ -26,3 +26,9 @@ server {
     }
 }
 ```
+## Enable the site and reload Nginx
+└─$ sudo ln -s /etc/nginx/sites-available/ipxe.conf /etc/nginx/sites-enabled/
+└─$ sudo nginx -t
+└─$ sudo systemctl reload nginx
+## Test the protection
+
