@@ -15,6 +15,6 @@ headers = {
     "X-Signature": sig
 }
 
-r = requests.get("https://83.228.213.33", headers=headers, verify='lamphost-pxe-server-zertifikatskette.pem')
+r = requests.get("https://83.228.213.33", headers=headers, verify='83-228-213-33.pem')
 print(r.status_code, r.text)
 
