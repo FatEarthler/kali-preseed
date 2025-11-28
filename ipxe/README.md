@@ -23,7 +23,7 @@ subjectAltName = @alt_names
 [alt_names]
 IP.1 = 83.228.213.33
 ```
-└─$ openssl req \
+└─$ sudo openssl req \
   -newkey rsa:4096 -nodes \
   -x509 -sha256 \
   -days 3650 \
@@ -31,8 +31,8 @@ IP.1 = 83.228.213.33
   -out /etc/ssl/certs/pxe-server.crt \
   -config ~/cert.conf
   -extensions req_ext
-└─$ chmod 600 /etc/ssl/private/pxe-server.key
-└─$ chmod 644 /etc/ssl/certs/pxe-server.crt
+└─$ sudo chmod 600 /etc/ssl/private/pxe-server.key
+└─$ sudo chmod 644 /etc/ssl/certs/pxe-server.crt
 ### Host the ipxe server under /var/www/ipxe
 └─$ sudo mkdir -p /var/www/ipxe
 └─$ sudo chmod 755 /var/www/ipxe
