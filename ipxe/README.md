@@ -5,13 +5,32 @@ The VPS host will use a self signed TLS certificate which will be pinned by the 
 ### Install nginx and lua http mod (required for HMAC)
 └─$ sudo apt install nginx libnginx-mod-http-lua
 ### Generate a self signed. X.509 certificate:
+└─$ vim ~/cert.conf
+```console
+[req]
+default_bits       = 4096
+prompt             = no
+default_md         = sha256
+req_extensions     = req_ext
+distinguished_name = dn
+
+[dn]
+CN = 83.228.213.33
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+IP.1 = 83.228.213.33
+```
 └─$ openssl req \
   -newkey rsa:4096 -nodes \
   -x509 -sha256 \
   -days 3650 \
   -keyout /etc/ssl/private/pxe-server.key \
   -out /etc/ssl/certs/pxe-server.crt \
-  -subj "/CN=lamphost-pxe-server"
+  -config ~/cert.conf
+  -extensions req_ext
 └─$ chmod 600 /etc/ssl/private/pxe-server.key
 └─$ chmod 644 /etc/ssl/certs/pxe-server.crt
 ### Host the ipxe server under /var/www/ipxe
