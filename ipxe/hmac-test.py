@@ -12,7 +12,7 @@ sig = base64.b64encode(hmac.new(SECRET, msg.encode(), hashlib.sha256).digest()).
 headers = {
     "X-Timestamp": timestamp,
     "X-Machine-ID": machine_id,
-    "X-Signature": sig
+    "X-HMAC": sig
 }
 
 r = requests.get("https://83.228.213.33", headers=headers, verify='83-228-213-33.pem')
