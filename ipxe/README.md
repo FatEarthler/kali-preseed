@@ -31,10 +31,13 @@ IP.1 = 83.228.213.33
   -out /etc/ssl/certs/pxe-server.crt \
   -config ~/cert.conf
   -extensions req_ext
+
 └─$ sudo chmod 600 /etc/ssl/private/pxe-server.key
+
 └─$ sudo chmod 644 /etc/ssl/certs/pxe-server.crt
 ### Host the ipxe server under /var/www/ipxe
 └─$ sudo mkdir -p /var/www/ipxe
+
 └─$ sudo chmod 755 /var/www/ipxe
 ### Create the master.key file
 └─$ echo $(openssl rand -hex 32) | sudo tee -a /etc/nginx/master.key
@@ -117,5 +120,7 @@ server {
 ```
 ### Enable the site and reload Nginx
 └─$ sudo ln -s /etc/nginx/sites-available/ipxe.conf /etc/nginx/sites-enabled/
+
 └─$ sudo nginx -t
+
 └─$ sudo systemctl reload nginx
